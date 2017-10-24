@@ -1,0 +1,9 @@
+#footer {
+    height: 75px; /*455*/
+    text-align: center;
+}
+
+#footer p {
+    padding-top: 27px;
+    color: #999999;
+}

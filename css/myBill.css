@@ -1,0 +1,99 @@
+#myBill .panel-heading {
+    height: 60px;
+    border-bottom: solid 1px #f3f3f3;
+}
+.myBill-1 .panel-heading h4 {
+    display: inline-block;
+    margin-top:  12px;
+}
+.myBill-1 .panel-heading .buttongroup {
+    float: right;
+}
+.myBill-1 .panel-heading .buttongroup .btn{
+    width: 70px;
+    color: #fff;
+    background-color: #01D1A5;
+    margin-top:  6px;
+}
+
+
+.myBill-1 .panel-body {
+    padding: 0;
+    height: 135px;
+}
+.myBill-1 .panel-body .col-sm-6{
+    height: 135px;
+}
+.myBill-1 .panel-body .row .col-sm-6:first-child {
+    border-right: solid 1px #f3f3f3;
+}
+.myBill-1 .panel-body .row .col-sm-6 .center-block {
+    margin-left: 100px;
+    margin-top: 35px;
+}
+.myBill-1 .panel-body .row .col-sm-6 .center-block img {
+    margin-bottom: 45px;
+}
+.myBill-1 .panel-body .row .col-sm-6 .center-block .inlinebox {
+    display: inline-block;
+    margin-left: 10px;
+}
+.myBill-1 .panel-body .col-sm-6 p:nth-child(2) {
+    font: 24px bold ;
+}
+.myBill-1 .panel-body .col-sm-6 p>span {
+    font-size: 14px;
+}
+
+
+#myBill .panel-footer {
+    background-color: #fff;
+    border-top: solid 1px #f3f3f3;
+    padding-bottom: 0;
+    height: 50px;
+}
+#myBill .panel-footer p {
+    margin-top: 5px;
+}
+
+/* myBill-1 结束 */
+
+.myBill-2 .panel-body{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.myBill-2 .panel-body .cardbox {
+    float: left;
+    width: 228px;
+    height: 110px;
+    padding-top: 20px;
+    padding-left: 18px;
+}
+.myBill-2 .panel-body .cardbox p {
+    margin-bottom: 4px;
+}
+.myBill-2 .panel-body .cardbox1 {
+    background-image: url(../images/myBill_3.png);
+    margin-right: 25px;
+}
+.myBill-2 .panel-body .cardbox2 {
+    background-image: url(../images/myBill_4.png);
+}
+.myBill-2 .gaiyaobody {
+    padding: 0;
+    height: 105px;
+}
+.myBill-2 .panel-body .row .col-sm-3 {
+    text-align: center;
+    height: 105px;
+    padding-top: 20px;
+    border-right: solid 1px #f3f3f3;
+}
+.myBill-2 .panel-body .col-sm-3 p:nth-child(2) {
+    font: 24px bold ;
+}
+.myBill-2 .panel-body .col-sm-3 p>span {
+    font-size: 14px;
+}
+

@@ -8,11 +8,12 @@
     <title>用户中心</title>
     <!-- Latest compiled and minified CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
 
     <style>
         .topbar {
             min-height: 30px;
-            border-bottom: solid 1px #eee;
+            border-bottom: solid 1px #ddd;
             height: 32px;
         }
         .navbar-brand {
@@ -41,6 +42,13 @@
         .navbar-nav>li>a:hover {
             color: #01D1A5;
             background-color: transparent;
+        }
+        .navbar-nav>li>a:active {
+            color: #01D1A5;
+            background-color: transparent;
+        }
+        .duoxiangNavbar {
+            margin-bottom: 15px;
         }
         .duoxiangbar-right li a {
             color: #000;
@@ -93,17 +101,6 @@
             color: #fff;
         }
 
-
-        /* footer */
-        .footer {
-            height: 455px;
-        }
-
-        .footer p {
-            text-align: center;
-            padding-top: 410px;
-            color: #999999;
-        }
 
 
         /* Modal */
@@ -161,8 +158,8 @@
 
 <!-- 多享金汇导航栏 -->
 <div class="container">
-    <nav class="navbar">
-       <img class="logoimg"  alt="多享金汇" width="170" height="57" src="images/logo.png" />
+    <nav class="navbar duoxiangNavbar">
+       <img alt="多享金汇logo" width="170" height="57" src="images/logo.png" />
         <ul class="nav navbar-nav navbar-right duoxiangbar-right">
             <li><a href="#"> 多享借点&nbsp;&nbsp; </a></li>
             <li><a href="#"> 关于我们&nbsp;&nbsp; </a></li>
@@ -216,12 +213,13 @@
 
 
 <!-- footer -->
-<div class="footer">
+<div style="margin-top: 380px">
+<div id="footer">
     <p>多享金汇&nbsp;&nbsp;&copy;2017&nbsp;www.duoxiang.com&nbsp;&nbsp;All Right Reserved&nbsp;&nbsp;
         版权所有&nbsp;&nbsp;增值电信业务许可证：桂B2-20150028&nbsp;&nbsp;备案号：桂ICP备14004236号
     </p>
 </div>
-
+</div>
 
 <!-- Modal（找回密码）-->
 <div id="myModal" class="modal fade" role="dialog">
