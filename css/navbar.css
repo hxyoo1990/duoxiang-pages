@@ -7,8 +7,8 @@
 .navbar-brand {
     height: 22px;
 }
-.topbar-left>li>a,
-.topbar-right>li>a,
+.topbar-left>li>a:link,
+.topbar-right>li>a:link,
 .navbar-brand {
     margin-top: 9px;
     line-height: 13px;
@@ -16,6 +16,10 @@
     padding-top: 0;
     color: #999999;
     font-size: 13px;
+}
+.topbar-left>li>a:visited,
+.topbar-right>li>a:visited {
+    color: #999;
 }
 .topbar-left>li>a,
 .navbar-brand {
@@ -26,10 +30,6 @@
 }
 .topbar-right>li:last-child>a {
     border-right: none;
-}
-.navbar-nav>li>a:link {
-    color: #01D1A5;
-    background-color: transparent;
 }
 .navbar-nav>li>a:hover {
     color: #01D1A5;

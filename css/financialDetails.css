@@ -1,0 +1,77 @@
+
+.financialDetails-1 .panel-heading {
+    height: 60px;
+    border-bottom: solid 1px #f3f3f3;
+    padding-top: 13px;
+}
+.financialDetails-1 .panel-heading h4 {
+    display: inline-block;
+}
+.financialDetails-1 .panel-heading .buttongroup {
+    float: right;
+}
+.financialDetails-1 .panel-heading .buttongroup .btn{
+    width: 70px;
+    text-align: center;
+    color: #fff;
+}
+.financialDetails-1 .panel-heading .buttongroup .btn:first-child {
+    background-color: #ffb820;
+    margin-right: 10px;
+}
+.financialDetails-1 .panel-heading .buttongroup .btn:last-child {
+    background-color: #01D1A5;
+    margin-right: 10px;
+}
+.financialDetails-1 .panel-body {
+    padding: 0;
+    height: 130px;
+}
+.financialDetails-1 .panel-body .col-sm-4 {
+    text-align: center;
+    height: 130px;
+}
+.financialDetails-1 .panel-body .row .col-sm-4:first-child{
+    border-right: solid 1px #f3f3f3;
+}
+.financialDetails-1 .panel-body .row .col-sm-4:nth-child(2) {
+    border-right: solid 1px #f3f3f3;
+}
+.financialDetails-1 .panel-body .col-sm-4 p:first-child {
+    margin-top: 35px;
+}
+.financialDetails-1 .panel-body .col-sm-4 p:nth-child(2) {
+    font: 24px bold ;
+}
+.financialDetails-1 .panel-body .col-sm-4 p>span {
+    font-size: 14px;
+}
+
+
+.financialDetails-2 .panel-heading h4 {
+    display: inline-block;
+}
+.financialDetails-2 .panel-heading .list-inline {
+    display: inline-block;
+}
+.financialDetails-2 .panel-heading .input-right {
+    float: right;
+}
+.financialDetails-2 .panel-heading .input-right .form-group {
+    float: left;
+    display: inline-block;
+    width: 180px;
+}
+
+.threeline {
+    margin: 5px 10px;
+    float: left;
+    display: inline-block;
+}
+.financialDetails-2 .panel-heading .input-right .btn {
+    float: left;
+    margin-left: 20px;
+    display: inline-block;
+    width: 70px;
+    background-color: #eee;
+}

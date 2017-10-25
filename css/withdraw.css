@@ -1,0 +1,57 @@
+.withdraw .panel-heading {
+    height: 135px;
+    padding-top: 43px;
+}
+.withdraw .panel-heading .bankcard {
+    background-color: #02d2a6;
+    width: 200px;
+    height: 70px;
+}
+.withdraw .panel-body {
+    height: 255px;
+    padding-top: 20px;
+}
+.withdraw .panel-body .leftdiv {
+    width: 120px;
+    float: left;
+    text-align: right;
+}
+
+.withdraw .panel-body .rightdiv {
+    float: left;
+    margin-left: 25px;
+}
+.withdraw .panel-body .leftdiv p,
+.withdraw .panel-body .rightdiv p {
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+.withdraw .panel-body .rightdiv input {
+    height: 35px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #999;
+    border-radius: 4px;
+}
+.withdraw .panel-body .buttondiv {
+    clear: both;
+    margin-left: 50px;
+}
+.withdraw .panel-body .buttondiv button {
+    color: #fff;
+    background-color: #01D1A5;
+    width: 100px;
+}
+
+
+.withdraw .panel-footer {
+    background-color: #fff;
+    height: 235px;
+    border-top: #f3f3f3;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.withdraw .panel-footer p {
+    font-size: 12px;
+    color: #999;
+}

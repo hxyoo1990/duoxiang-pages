@@ -10,6 +10,7 @@
 }
 .leftpanel .panel-group {
     width: 218px;
+    margin-bottom: 15px;
 }
 .leftpanel .panel-heading {
     margin-right: 0;
@@ -38,8 +39,59 @@
     width: 902px;
 }
 
+.panel {
+    border: none;
+}
+.panel-heading {
+    height: 60px;
+    border-bottom: solid 1px #f3f3f3;
+}
+.glyphicon-question-sign {
+    font-size: 13px;
+    color: #01D1A5;
+}
+
+/* Tooltip */
+.tooltip > .tooltip-inner {
+    padding: 8px 10px;
+    background-color: #d5faf2;
+    color: #00ab87;
+    font-size: 12px;
+    text-align: left;
+    max-width: 400px;
+}
+.tooltip.right > .tooltip-arrow {
+    border-right: 5px solid #d5faf2;
+}
+
+ul li a:link {
+    color: #000;
+    text-decoration: none;
+}
+ul li a:visited  {
+    color: #000;
+    text-decoration: none;
+}
+ul li a:hover  {
+    color: #01D1A5;
+    text-decoration: none;
+}
+ul li a:active {
+    color: #01D1A5;
+    text-decoration: none;
+}
+
+.colororange {
+    color: #ff6800;
+}
 .colorgray {
     color: #999999;
+}
+.font-size-sm {
+    font-size: 11px;
+}
+.colorblack {
+    color: #000000;
 }
 
 /* rightpanel table */

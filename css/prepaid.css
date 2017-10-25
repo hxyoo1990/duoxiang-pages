@@ -1,0 +1,52 @@
+.prepaid .panel-heading {
+    height: 135px;
+    padding-top: 43px;
+}
+.prepaid .panel-body {
+    height: 255px;
+    padding-top: 20px;
+}
+.prepaid .panel-body .leftdiv {
+    width: 120px;
+    float: left;
+    text-align: right;
+}
+
+.prepaid .panel-body .rightdiv {
+    float: left;
+    margin-left: 25px;
+}
+.prepaid .panel-body .leftdiv p,
+.prepaid .panel-body .rightdiv p {
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+.prepaid .panel-body .rightdiv input {
+    height: 35px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #999;
+    border-radius: 4px;
+}
+.prepaid .panel-body .buttondiv {
+    clear: both;
+    margin-left: 50px;
+}
+.prepaid .panel-body .buttondiv button {
+    color: #fff;
+    background-color: #01D1A5;
+    width: 100px;
+}
+
+
+.prepaid .panel-footer {
+    background-color: #fff;
+    height: 205px;
+    border-top: #f3f3f3;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.prepaid .panel-footer p {
+    font-size: 12px;
+    color: #999;
+}
