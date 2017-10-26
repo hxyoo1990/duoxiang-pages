@@ -15,16 +15,24 @@
     <link href="css/financialDetails.css" rel="stylesheet">
     <link href="css/prepaid.css" rel="stylesheet">
     <link href="css/withdraw.css" rel="stylesheet">
+    <link href="css/message.css" rel="stylesheet">
+
     <style>
+        #accountOverview {
+            display: none;
+        }
         #myBill {
             display: none;
         }
+
         #financialDetails {
             display: none;
         }
+
         #prepaid {
             display: none;
         }
+
         #withdraw {
             display: none;
         }
@@ -72,7 +80,7 @@
                 <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a href="#accountOverview">账户总览</a>
+                            <a id="accountOverview-link" href="">账户总览</a>
                         </h4>
                     </div>
                 </div>
@@ -87,7 +95,7 @@
                     </div>
                     <div id="collapse2" class="panel-collapse collapse">
                         <ul class="list-group">
-                            <li class="list-group-item"><a href="#myBill">我的账单</a></li>
+                            <li class="list-group-item"><a id="myBill-link" href="">我的账单</a></li>
                         </ul>
                     </div>
                 </div>
@@ -162,7 +170,7 @@
 
             <!-- 账户总览 -->
             <div id="accountOverview">
-                <div class="financialDetails-1">
+                <div class="accountOverview-1">
                     <div class="panel">
                         <div class="panel-heading">
                             <span>用户名</span>
@@ -183,18 +191,19 @@
                                     <p>48780.00<span> 元</span></p>
                                 </div>
                                 <div class="col-sm-4">
-                                    <p class="colorgray" data-toggle="tooltip" title="还款金额 = 当前还款金额 +罚息金额 + 总欠款">
+                                    <p class="colorgray">
                                         本期应还款
-                                        <span class="glyphicon glyphicon-question-sign"></span>
+                                        <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip"
+                                              data-placement="left" title="还款金额 = 当前还款金额 + 罚息金额 + 总欠款"></span>
                                     </p>
-                                    <a href="#">去还款</a>
+                                    <a class="colororange" href="#">去还款</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="accoutOverview-2">
+                <div class="accountOverview-2">
                     <div class="panel">
                         <div class="panel-heading">
                             <h4>当前还款计划</h4>
@@ -256,7 +265,7 @@
                     </div>
                 </div>
 
-                <div class="accoutOverview-3">
+                <div class="accountOverview-3">
                     <div class="panel">
                         <div class="panel-heading">
                             <h4>借款历史</h4>
@@ -585,7 +594,8 @@
                             <div class="rightdiv">
                                 <p>3993.00 <span>元</span></p>
                                 <input placeholder="请输入充值金额">
-                                <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right"
+                                <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip"
+                                      data-placement="right"
                                       title="充值金额不低于100元，不能高于50万元
                                      充值费用按充值金额的0.0%由第三方平台收取，上限0元，超出部分由平台支付">
                                 </span>
@@ -628,8 +638,9 @@
                                 <p>3993.00 <span>元</span></p>
                                 <input placeholder="请输入提现金额">
                                 <p>0.00 元 <span class="colorgray font-size-sm"> （若产生提现手续费，将从您的账户金额中扣除） </span>
-                                    <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right"
-                                                title="第三方收取提现手续费 1000元以下 3元每笔 1000元（含）以上 0元每笔">
+                                    <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip"
+                                          data-placement="right"
+                                          title="第三方收取提现手续费 1000元以下 3元每笔 1000元（含）以上 0元每笔">
                                 </span>
                                 </p>
                                 <p class="colororange">0.00 <span class="colorblack">元</span></p>
@@ -653,6 +664,116 @@
                 </div>
             </div>
             <!-- 提现结束 -->
+            <!-- 站内消息 -->
+            <div id="message">
+                <div class="message">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <p>接收时间： </p>
+                            <div class="timeinput">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="11">
+                                        <div class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="threeline"> --- </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="22">
+                                        <div class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="input-right">
+                                <p>读取状态： </p>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        全部 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            <button class="btn">搜索</button>
+                            </div>
+                        </div>
+
+                            <div class="panel-body">
+                                <button class="btn"><span class="glyphicon glyphicon-trash colorgray"></span> 删除</button>
+                                <button class="btn"><span class="glyphicon glyphicon-envelope colorgray"></span> 标记为已读</button>
+                                <button class="btn"><span class="glyphicon glyphicon-envelope colorgray"></span> 全部标记为已读</button>
+                                <table class="table table-striped colorgray">
+                                    <thead>
+                                    <tr>
+                                        <th><input type="checkbox" /></th>
+                                        <th>时间</th>
+                                        <th>来至</th>
+                                        <th>摘要</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td>2017-11-10 11:22:33</td>
+                                        <td>Doe</td>
+                                        <td>john@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td>Mary</td>
+                                        <td>Moe</td>
+                                        <td>mary@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td>July</td>
+                                        <td>Dooley</td>
+                                        <td>july@example.com</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 站内消息结束 -->
+            <!-- 安全设置 -->
+            <div id="security">
+                <div class="security">
+
+                </div>
+            </div>
+            <!-- 安全设置结束 -->
+
 
 
         </div>
@@ -673,9 +794,28 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script>
+
     $(document).ready(function () {
+        var myaccount = ["accountOverview", "myBill", "financialDetails", "prepaid", "withdraw"];
         $('[data-toggle="tooltip"]').tooltip();
+
+        $('#accountOverview-link').click(function () {
+            var myaccountpart = myaccount.splice(0, 1);
+            for (var i = 0; i < myaccountpart.length; i++) {
+                $('#myaccountpart[i]').hide();
+            }
+            $('#accountOverview').show();
+        });
+
+        $('#myBill-link').click(function () {
+            var myaccountpart = myaccount.splice(1, 1);
+            for (var i = 0; i < myaccountpart.length; i++) {
+                $('#myaccountpart[i]').hide();
+            }
+            $('#myBill').show();
+        });
     });
+
 </script>
 </body>
 </html>

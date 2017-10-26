@@ -60,8 +60,17 @@
     text-align: left;
     max-width: 400px;
 }
+.tooltip.left> .tooltip-arrow {
+    border-left: 5px solid #d5faf2;
+}
 .tooltip.right > .tooltip-arrow {
     border-right: 5px solid #d5faf2;
+}
+.tooltip.top> .tooltip-arrow {
+    border-top: 5px solid #d5faf2;
+}
+.tooltip.bottom> .tooltip-arrow {
+    border-bottom: 5px solid #d5faf2;
 }
 
 ul li a:link {
@@ -105,7 +114,6 @@ ul li a:active {
 .table>thead>tr>th {
     border: none;
     text-align: center;
-    width: 128px;
     height: 50px;
     vertical-align: middle;
 }

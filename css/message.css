@@ -1,0 +1,52 @@
+.message .panel-heading {
+    height: 75px;
+    padding-top: 20px;
+}
+.message .panel-heading p {
+    margin-top: 8px;
+    display: inline-block;
+    float: left;
+}
+.message .panel-heading .timeinput {
+    display: inline-block;
+    float: left;
+}
+.message .panel-heading .timeinput .form-group {
+    float: left;
+    display: inline-block;
+    width: 180px;
+}
+
+.threeline {
+    margin: 5px 10px;
+    float: left;
+    display: inline-block;
+}
+
+
+.message .panel-heading .input-right {
+    display: inline-block;
+    float: right;
+}
+.message .panel-heading .input-right .btn-group button {
+    background-color: #fff;
+    width: 100px;
+    margin-left: 10px;
+    text-align: left;
+}
+.message .panel-heading .btn {
+    margin-left: 20px;
+    width: 70px;
+    background-color: #eee;
+}
+.message .panel-body {
+    padding-top: 30px;
+}
+.message .panel-body button{
+    background-color: #fff;
+    border: solid 1px #cccccc;
+}
+.message .panel-body .table {
+    margin-top: 10px;
+    border: solid 1px #eee;
+}
