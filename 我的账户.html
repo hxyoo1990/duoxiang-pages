@@ -16,6 +16,10 @@
     <link href="css/prepaid.css" rel="stylesheet">
     <link href="css/withdraw.css" rel="stylesheet">
     <link href="css/message.css" rel="stylesheet">
+    <link href="css/security.css" rel="stylesheet">
+    <link href="css/bankmanage.css" rel="stylesheet">
+    <link href="css/coupon.css" rel="stylesheet">
+
 
     <style>
         #accountOverview {
@@ -34,6 +38,15 @@
         }
 
         #withdraw {
+            display: none;
+        }
+        #message {
+            display: none;
+        }
+        #security {
+            display: none;
+        }
+        #bankmanage {
             display: none;
         }
     </style>
@@ -769,10 +782,98 @@
             <!-- 安全设置 -->
             <div id="security">
                 <div class="security">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="box">
+                                <div class="div">您的账户安全级别： <span class="colororange">低</span>
+                                    <div class="bar">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                    </div>
+                                建议您启动全部安全设置，以保护账户资金安全。
+                                </div>
+                                <p>上次登录时间： 2017-10-12 14:50:52</p>
+                            </div>
+                            <div class="section">
+                                <span>已认证</span>
+                                <span><span class="glyphicon glyphicon-ok-sign colorgreen"> </span> <span> 实名认证</span></span>
+                                <span class="colorgray">张上岗古代诗歌大哥大哥的个电饭锅</span>
+                                <span><a class="colorgreen" href="">查看</a></span>
+                            </div>
+                            <div class="section">
+                                <span>已设置</span>
+                                <span><span class="glyphicon glyphicon-ok-sign colorgreen"> </span> <span> 登录密码</span></span>
+                                <span class="colorgray">张上岗古代诗歌大哥大哥的个电饭锅</span>
+                                <span><a class="colorgreen" href="" data-toggle="modal" data-target="#xiugai">修改</a></span>
+                            </div>
+                            <div class="section">
+                                <span>已设置</span>
+                                <span><span class="glyphicon glyphicon-ok-sign colorgreen"> </span> <span> 交易密码</span></span>
+                                <span class="colorgray">张上岗古代诗歌大哥大哥的个电饭锅</span>
+                                <span><a class="colororange" href="" data-toggle="modal" data-target="#zhaohui">找回</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a class="colorgreen" href="" data-toggle="modal" data-target="#xiugai">修改</a></span>
+                            </div>
+                            <div class="section">
+                                <span class="colororange">未认证</span>
+                                <span><span class="glyphicon glyphicon-remove-sign colororange"> </span> <span> 手机认证</span></span>
+                                <span class="colorgray">张上岗古代诗歌大哥大哥的个电饭锅</span>
+                                <span><a class="colorgreen" href="">去设置</a></span>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
             <!-- 安全设置结束 -->
+            <!-- 银行存管-->
+            <div id="bankmanage">
+                <div class="bankmanage">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h4>您的存管银行：<img src="./images/prepaid_1.png" width="179" height="49" /></h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="section">
+                                <span><span class="glyphicon glyphicon-ok-sign colorgreen"> </span> <span> 交易密码</span></span>
+                                <span class="colorgray">张上岗古代诗歌大哥大哥的个电饭锅dsfsafsffsafsafsafsffffsfsafsafsaffsfsf</span>
+                                <span><a class="colororange" href="" data-toggle="modal" data-target="#zhaohui">找回</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a class="colorgreen" href="" data-toggle="modal" data-target="#xiugai">修改</a></span>
+                            </div>
+                            <div class="section">
+                                <span><span class="glyphicon glyphicon-ok-sign colorgreen"> </span> <span> 银行卡号</span></span>
+                                <span class="colorgray">张上岗古代诗歌大哥大哥的个电饭锅</span>
+                                <span><a class="colorgreen" href="">解绑银行卡</a></span>
+                            </div>
+                            <div class="section">
+                                <span><span class="glyphicon glyphicon-ok-sign colorgreen"> </span> <span> 银行预留手机号码</span></span>
+                                <span class="colorgray">187****5399</span>
+                                <span><a class="colorgreen" href="" data-toggle="modal" data-target="#xiugai">修改</a></span>
+                            </div>
+                            <div class="section">
+                                <span><span class="glyphicon glyphicon-remove-sign colororange"> </span> <span> 用户授权</span></span>
+                                <span class="colorgray">张上岗古代诗歌大哥大哥的个电饭锅</span>
+                                <span><a class="colorgreen" href="">增加授权</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 银行存管结束 -->
+            <!-- 优惠券 -->
+            <div id="coupon">
+                <div class="coupon">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h4>优惠券</h4>
+                        </div>
+                        <div class="panel-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 优惠券结束 -->
+
 
 
 
@@ -787,6 +888,79 @@
     <p>多享金汇&nbsp;&nbsp;&copy;2017&nbsp;www.duoxiang.com&nbsp;&nbsp;All Right Reserved&nbsp;&nbsp;
         版权所有&nbsp;&nbsp;增值电信业务许可证：桂B2-20150028&nbsp;&nbsp;备案号：桂ICP备14004236号
     </p>
+</div>
+
+<!-- Modal（找回）-->
+<div id="zhaohui" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">使用手机号找回</h5>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form" >
+                    <div class="form-group">
+                        <label class="control-label col-sm-2 col-sm-offset-1" for="npw">输入新密码:</label>
+                        <div class="col-sm-5">
+                            <input type="email" class="form-control" id="npw" placeholder="请输入新密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2 col-sm-offset-1" for=" cfmnpw">确认新密码:</label>
+                        <div class="col-sm-5">
+                            <input type="password" class="form-control" id=" cfmnpw" placeholder="再次确认新密码">
+                        </div>
+                        <a href=""  class="vercode-link">获取验证码</a>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <button type="submit" class="btn">下一步</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal（修改）-->
+<div id="xiugai" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">使用原手机号修改</h5>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form" >
+                    <div class="form-group">
+                        <label class="control-label col-sm-2 col-sm-offset-1">原手机号码:</label>
+                        <div class="col-sm-5">
+                            <span>156****2219</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2 col-sm-offset-1" for=" verCode">短信验证码:</label>
+                        <div class="col-sm-5">
+                            <input type="password" class="form-control" id=" verCode" placeholder="请输入短信验证码">
+                        </div>
+                        <a href=""  class="vercode-link">获取验证码</a>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <button type="submit" class="btn">下一步</button>
+                            <button type="submit" class="btn btn-cancel">取消</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

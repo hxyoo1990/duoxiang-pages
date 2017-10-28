@@ -1,0 +1,90 @@
+.security .panel-body {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.security .panel-body .box {
+    padding-top: 18px;
+    padding-left: 20px;
+    background-color: #f2fcfa;
+    height: 90px;
+}
+.security .panel-body .box .div {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.security .panel-body .box .div .bar{
+    display: inline-block;
+    margin: 0 20px 0 5px;
+}
+.security .panel-body .box .bar .bar1 {
+    float: left;
+    display: inline-block;
+    width: 30px;
+    height: 12px;
+    background-color: #ff6800;
+}
+.security .panel-body .box .bar .bar2 {
+    float: left;
+    display: inline-block;
+    width: 80px;
+    height: 12px;
+    background-color: #ffede1;
+}
+.security .panel-body .section{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: solid 1px #eee;
+}
+.security .panel-body .section:last-child {
+    border-bottom: none;
+}
+.security .panel-body .section >span:first-child {
+    width: 60px;
+}
+.security .panel-body .section >span:nth-child(2) {
+    width: 100px;
+}
+.security .panel-body .section >span:nth-child(3) {
+    width: 400px;
+}
+.security .panel-body .section >span:last-child {
+    width: 80px;
+    text-align: right;
+}
+
+/* Modal */
+.modal-body .form-horizontal {
+    margin-top: 65px;
+}
+.modal-body .form-horizontal .form-group {
+    margin-bottom: 25px;
+}
+.modal-body .form-horizontal .form-group .control-label {
+    padding-right: 0;
+}
+.modal-body .form-horizontal .form-group span {
+    float: left;
+    padding-top: 7px;
+}
+.modal-body .form-horizontal .form-group .vercode-link {
+    color: #ff6800;
+    line-height: 35px;
+}
+.modal-body .form-horizontal .form-group .btn {
+    height: 35px;
+    width: 98px;
+    margin-bottom: 60px;
+    margin-right: 20px;
+    background-color: #01D1A5;
+    color: #fff;
+    font-size: 16px;
+}
+.modal-body .form-horizontal .form-group .btn-cancel {
+    background-color: #fff;
+    color: #01D1A5;
+    border: solid 1px #01D1A5;
+}

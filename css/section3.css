@@ -90,6 +90,9 @@ ul li a:active {
     text-decoration: none;
 }
 
+.colorgreen {
+    color: #02d2a6;
+}
 .colororange {
     color: #ff6800;
 }

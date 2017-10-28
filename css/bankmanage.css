@@ -1,0 +1,31 @@
+.bankmanage .panel-heading {
+    height: 105px;
+    border-bottom: solid 1px #eee;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.bankmanage .panel-body .section{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: solid 1px #eee;
+}
+.bankmanage .panel-body .section:last-child {
+    border-bottom: none;
+}
+.bankmanage .panel-body .section >span:first-child {
+    width: 150px;
+}
+.bankmanage .panel-body .section >span:nth-child(2) {
+    width: 550px;
+}
+.bankmanage .panel-body .section >span:last-child {
+    width: 80px;
+    text-align: right;
+}
