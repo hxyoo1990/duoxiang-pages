@@ -5,135 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>用户中心</title>
+    <title>用户中心登录</title>
     <!-- Latest compiled and minified CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
-
-    <style>
-        .topbar {
-            min-height: 30px;
-            border-bottom: solid 1px #ddd;
-            height: 32px;
-        }
-        .navbar-brand {
-            height: 22px;
-        }
-        .topbar-left>li>a,
-        .topbar-right>li>a,
-        .navbar-brand {
-            margin-top: 9px;
-            line-height: 13px;
-            padding-bottom: 0;
-            padding-top: 0;
-            color: #999999;
-            font-size: 13px;
-        }
-        .topbar-left>li>a,
-        .navbar-brand {
-            padding-right: 0;
-        }
-        .topbar-right>li>a {
-            border-right: solid 1px #999;
-        }
-        .topbar-right>li:last-child>a {
-            border-right: none;
-        }
-        .navbar-nav>li>a:hover {
-            color: #01D1A5;
-            background-color: transparent;
-        }
-        .navbar-nav>li>a:active {
-            color: #01D1A5;
-            background-color: transparent;
-        }
-        .duoxiangNavbar {
-            margin-bottom: 15px;
-        }
-        .duoxiangbar-right li a {
-            color: #000;
-            font-size: 18px;
-        }
-
-
-        /* banner */
-        .banner {
-            background-image: url(images/loginbanner.png);
-            height: 504px;
-        }
-
-        .form-container {
-            background-color: #fff;
-            margin-top: 80px;
-            float: right;
-            height: 300px;
-            width: 310px;
-        }
-
-        .form-group p {
-            font-size: 16px;
-            margin-top: 16px;
-        }
-
-        .input-group,
-        .input-group input {
-            height: 42px;
-            background-color: #FAFFBD;
-        }
-
-        .glyphicon {
-            color: #999999;
-        }
-
-        .checkbox span a {
-            float: right;
-            color: #01D1A5;
-        }
-
-        .btn {
-            background-color: #01D1A5;
-            color: #fff;
-            font-size: 16px;
-            height: 42px;
-        }
-
-        .btn:hover {
-            color: #fff;
-        }
-
-
-
-        /* Modal */
-        .modal-body .form-horizontal {
-            margin-top: 65px;
-        }
-
-        .modal-body .form-horizontal .form-group {
-            margin-bottom: 25px;
-        }
-
-        .modal-body .form-horizontal .form-group .control-label {
-            padding-right: 0;
-        }
-
-        .modal-body .form-horizontal .form-group .vercode-link {
-            color: #ff6800;
-            line-height: 35px;
-        }
-
-        .modal-body .form-horizontal .form-group .btn {
-            height: 35px;
-            width: 98px;
-            margin-bottom: 60px;
-            margin-right: 20px;
-        }
-
-        .modal-body .form-horizontal .form-group .btn-cancel {
-           background-color: #fff;
-            color: #01D1A5;
-            border: solid 1px #01D1A5;
-        }
-    </style>
+    <link href="css/section3.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
 </head>
 
 
@@ -159,7 +36,7 @@
 <!-- 多享金汇导航栏 -->
 <div class="container">
     <nav class="navbar duoxiangNavbar">
-       <img alt="多享金汇logo" width="170" height="57" src="images/logo.png" />
+        <img alt="多享金汇logo" width="170" height="57" src="images/logo.png"/>
         <ul class="nav navbar-nav navbar-right duoxiangbar-right">
             <li><a href="#"> 多享借点&nbsp;&nbsp; </a></li>
             <li><a href="#"> 关于我们&nbsp;&nbsp; </a></li>
@@ -204,21 +81,35 @@
                         <button type="submit" class="btn col-sm-12">借款人身份登录</button>
                     </div>
                 </div>
-
+                <p><span class="colorgray"> ————</span>&nbsp;&nbsp;&nbsp;选择登录角色&nbsp;&nbsp;&nbsp; <span
+                        class="colorgray">————</span></p>
+                <div class="box">
+                    <div>
+                        <a class="login-role login-role01 active" href=""></a>
+                        <p>借款人</p>
+                    </div>
+                    <div>
+                        <a class="login-role login-role02" href=""></a>
+                        <p>担保商</p>
+                    </div>
+                    <div>
+                        <a class="login-role login-role03" href=""></a>
+                        <p>店家</p>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
 </div>
 
 
-
 <!-- footer -->
 <div style="margin-top: 380px">
-<div id="footer">
-    <p>多享金汇&nbsp;&nbsp;&copy;2017&nbsp;www.duoxiang.com&nbsp;&nbsp;All Right Reserved&nbsp;&nbsp;
-        版权所有&nbsp;&nbsp;增值电信业务许可证：桂B2-20150028&nbsp;&nbsp;备案号：桂ICP备14004236号
-    </p>
-</div>
+    <div id="footer">
+        <p>多享金汇&nbsp;&nbsp;&copy;2017&nbsp;www.duoxiang.com&nbsp;&nbsp;All Right Reserved&nbsp;&nbsp;
+            版权所有&nbsp;&nbsp;增值电信业务许可证：桂B2-20150028&nbsp;&nbsp;备案号：桂ICP备14004236号
+        </p>
+    </div>
 </div>
 
 <!-- Modal（找回密码）-->
@@ -232,7 +123,7 @@
                 <h5 class="modal-title">找回登录密码</h5>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal" role="form" >
+                <form class="form-horizontal" role="form">
                     <div class="form-group">
                         <label class="control-label col-sm-2 col-sm-offset-1" for="phoneNumber">手机号码:</label>
                         <div class="col-sm-5">
@@ -244,7 +135,7 @@
                         <div class="col-sm-5">
                             <input type="password" class="form-control" id=" verCode" placeholder="请输入短信验证码">
                         </div>
-                        <a href=""  class="vercode-link">获取验证码</a>
+                        <a href="" class="vercode-link">获取验证码</a>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-3 col-sm-9">
@@ -263,6 +154,13 @@
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script>
+    $("a.login-role").click(function () {
+        event.preventDefault();
+        $("a.login-role.active").removeClass("active");
+        $(this).addClass("active");
+    });
+</script>
 </body>
 
 </html>

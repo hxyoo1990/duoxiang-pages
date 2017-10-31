@@ -1,3 +1,99 @@
 .coupon .panel-heading {
     border-bottom: none;
 }
+.coupon .panel-body {
+    min-height: 900px;
+}
+.coupon .navbar {
+    background-color: #f8f8f8;
+    min-height: 40px;
+    height: 40px;
+    margin-bottom: 35px;
+}
+.coupon .navbar-right {
+    margin-right: 15px;
+}
+.coupon ul li a {
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+.coupon ul li a:link {
+    color: #000;
+    text-decoration: none;
+}
+.coupon ul li a:visited  {
+    color: #000;
+    text-decoration: none;
+}
+.coupon ul li a:hover  {
+    color: #ff6800;
+    text-decoration: none;
+}
+.coupon ul li a:active {
+    color: #ff6800;
+    text-decoration: none;
+}
+
+.coupon .cardbox {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+.coupon .cardbox-common {
+    height: 237px;
+    width: 228px;
+    margin-right: 30px;
+    margin-bottom: 35px;
+    padding: 20px 0 0 15px;
+    color: #fff;
+}
+.coupon .cardbox-common .btn {
+    height: 35px;
+    width: 128px;
+    color: #02d2a6;
+    background-color: #fff;
+    border: solid 1px #02d2a6;
+    margin: 25px 35px 20px 35px;
+}
+.coupon .cardbox1 {
+    background-image: url("../images/coupon_1.png");
+}
+.coupon .cardbox2 {
+    background-image: url("../images/coupon_2.png");
+}
+.coupon .cardbox3 {
+    background-image: url("../images/coupon_3.png");
+}
+.coupon .cardbox4 {
+    background-image: url("../images/coupon_4.png");
+}
+.coupon .cardbox5 {
+    background-image: url("../images/coupon_5.png");
+}
+
+.coupon .cardbox-common >p>span {
+    font-size: 26px;
+    font-weight: 700;
+}
+.coupon .cardbox-common p {
+    margin-bottom: 3px;
+}
+.coupon .cardbox-common p:first-child {
+    margin-bottom: 6px;
+}
+.coupon .cardbox-common p:nth-child(2),
+.coupon .cardbox-common p:nth-child(3),
+.coupon .cardbox-common p:nth-child(4) {
+    font-size: 13px;
+    font-weight: bold;
+}
+.coupon .cardbox-common .colorgray {
+    font-size: 13px;
+}
+.coupon .cardbox3 .btn,
+.coupon .cardbox4 .btn,
+.coupon .cardbox5 .btn {
+    color: #999999;
+    border: solid 1px #999999;
+}
