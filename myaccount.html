@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>我的账户</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/section3.css" rel="stylesheet">
+    <link href="css/accountOverview.css" rel="stylesheet">
+    <link href="css/myBill.css" rel="stylesheet">
+    <link href="css/financialDetails.css" rel="stylesheet">
+    <link href="css/prepaid.css" rel="stylesheet">
+    <link href="css/withdraw.css" rel="stylesheet">
+    <link href="css/message.css" rel="stylesheet">
+    <link href="css/security.css" rel="stylesheet">
+    <link href="css/bankmanage.css" rel="stylesheet">
+    <link href="css/coupon.css" rel="stylesheet">
+
+
+    <style>
+        #bankmanage {
+            display: none;
+        }
+        #coupon {
+            display: none;
+        }
+        #myBill {
+            display: none;
+        }
+        #prepaid {
+            display: none;
+        }
+        #message {
+            display: none;
+        }
+        #security {
+            display: none;
+        }
+        #withdraw {
+            display: none;
+        }
+        #financialDetails {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- 网站头部 -->
+<nav class="navbar topbar">
+    <div class="container">
+        <span class="navbar-brand">客服热线：400-151-5303（9:00-18:00）</span>
+        <ul class="nav navbar-nav topbar-left">
+            <li><a href="#">qq图标</a></li>
+            <li><a href="#">微博图标</a></li>
+            <li><a href="#">微信图标</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right topbar-right">
+            <li><a href="#">用户名 </a></li>
+            <li><a href="#"> 安全退出 </a></li>
+            <li><a href="#"> 手机客户端</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- 多享金汇导航栏 -->
+<div class="container">
+    <nav class="navbar duoxiangNavbar">
+        <img alt="多享金汇logo" width="170" height="57" src="images/logo.png"/>
+        <ul class="nav navbar-nav navbar-right duoxiangbar-right">
+            <li><a href="#"> 多享借点&nbsp;&nbsp; </a></li>
+            <li><a href="#"> 关于我们&nbsp;&nbsp; </a></li>
+            <li><a href="#"> 常见问题&nbsp;&nbsp; </a></li>
+            <li><a href="#"> 我的账户 </a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- section3 -->
+<div id="section3">
+    <div class="container">
+        <div class="leftpanel">
+
+            <div class="panel-group">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title active">
+                            <a href="#accountOverview"><i class="nav-icon nav-icon01"></i> &nbsp;账户总览</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-group">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse2"><i class="nav-icon nav-icon02"></i> &nbsp;我的借款</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#myBill">我的账单</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-group">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse3"><i class="nav-icon nav-icon03"></i> &nbsp;资金管理</a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#financialDetails">资金明细</a></li>
+                            <li class="list-group-item"><a href="#prepaid"> 充值</a></li>
+                            <li class="list-group-item"><a href="#withdraw"> 提现</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-group">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse4"><i class="nav-icon nav-icon04"></i> &nbsp;互动管理</a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a  href="#message">站内消息</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-group">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse5"><i class="nav-icon nav-icon05"></i> &nbsp;账户设置</a>
+                        </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#security">安全设置</a></li>
+                            <li class="list-group-item"><a href="#bankmanage">银行存管</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-group">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse6"><i class="nav-icon nav-icon06"></i> &nbsp;我的福利</a>
+                        </h4>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#coupon">优惠券</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rightpanel">
+
+            <!-- 账户总览 -->
+            <div id="accountOverview" role="tabpanel" class="tab">
+                <div class="accountOverview-1">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <span>用户名</span>
+                            <div class="buttongroup">
+                                <button type="button" class="btn btn-sm">充值</button>
+                                <button type="button" class="btn btn-sm">提现</button>
+                                <button type="button" class="btn btn-sm disabled">申请延期</button>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p class="colorgray">借款总金额</p>
+                                    <p>51000.00<span> 元</span></p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p class="colorgray">账户金额</p>
+                                    <p>48780.00<span> 元</span></p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p class="colorgray">
+                                        本期应还款
+                                        <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip"
+                                              data-placement="left" title="还款金额 = 当前还款金额 + 罚息金额 + 总欠款"></span>
+                                    </p>
+                                    <a class="colororange" href="#">去还款</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accountOverview-2">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h4>当前还款计划</h4>
+                        </div>
+                        <div class="panel-body colorgray tablebody">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>期数</th>
+                                    <th>回款日期</th>
+                                    <th>应还本息(元)</th>
+                                    <th>罚息(元)</th>
+                                    <th>已还本息(元)</th>
+                                    <th>还款状态</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                </tr>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accountOverview-3">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h4>借款历史</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p>2</p>
+                                    <p class="colorgray">借款次数(次)</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <p>6</p>
+                                    <p class="colorgray">准时还款次数(次)</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <p>1</p>
+                                    <p class="colorgray">已结清借款(次)</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <p>0</p>
+                                    <p class="colorgray">逾期次数(次)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 账户总览结束 -->
+            <!-- 我的账单 -->
+            <div id="myBill" class="tab">
+
+                <div class="myBill-1">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h4>账单查询</h4>
+                            <div class="buttongroup">
+                                <button type="button" class="btn btn-sm">立即还款</button>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="center-block">
+                                        <img src="images/myBill_1.png" width="41" height="41">
+                                        <div class="inlinebox">
+                                            <p class="colorgray">借款总金额</p>
+                                            <p>51000.00<span> 元</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="center-block">
+                                        <img src="images/myBill_2.png" height="39" width="42">
+                                        <div class="inlinebox">
+                                            <p class="colorgray">账户金额</p>
+                                            <p>48780.00<span> 元</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <p class="colorgray">还款日期：</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="myBill-2">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h4>请选择借款历史</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="cardbox cardbox1">
+                                <p>多享分期</p>
+                                <p>借款：20000.00元</p>
+                                <p>分期：6个月</p>
+                            </div>
+                            <div class="cardbox cardbox2">
+                                <p>多享分期</p>
+                                <p>借款：20000.00元</p>
+                                <p>分期：6个月</p>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <button class="btn">2018年</button>
+                            <button class="btn">2017年</button>
+                        </div>
+                        <div class="panel-heading">
+                            <h4>账单概要</h4>
+                        </div>
+                        <div class="panel-body gaiyaobody">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="center-block">
+                                        <p class="colorgray">本期应还款额</p>
+                                        <p>40.00<span> 元</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="center-block">
+                                        <p class="colorgray">账户余额</p>
+                                        <p>40.00<span> 元</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="center-block">
+                                        <p class="colorgray">逾期天数</p>
+                                        <p>4<span> 天</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="center-block">
+                                        <p class="colorgray">罚息金额</p>
+                                        <p>68.00<span> 元</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <p class="colorgray">到期还款日：</p>
+                        </div>
+
+                        <div class="panel-heading">
+                            <h4>账单还款计划</h4>
+                        </div>
+                        <div class="panel-body colorgray tablebody">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>期数</th>
+                                    <th>回款日期</th>
+                                    <th>应还本息(元)</th>
+                                    <th>罚息(元)</th>
+                                    <th>已还本息(元)</th>
+                                    <th>还款状态</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                </tr>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                </tr>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                    <td>john</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 我的账单结束 -->
+            <!-- 资金明细 -->
+            <div id="financialDetails" class="tab">
+                <div class="financialDetails-1">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h4>资金明细</h4>
+                            <div class="buttongroup">
+                                <button type="button" class="btn btn-sm">充值</button>
+                                <button type="button" class="btn btn-sm">提现</button>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p class="colorgray">账户总资产</p>
+                                    <p>51000.00<span> 元</span></p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p class="colorgray">冻结金额</p>
+                                    <p>48780.00<span> 元</span></p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p class="colorgray">可用余额</p>
+                                    <p>48780.00<span> 元</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="financialDetails-2">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h4>交易时间：</h4>
+                            <ul class="list-inline">
+                                <li><a href="#">今天</a></li>
+                                <li><a href="#">最近7天</a></li>
+                                <li><a href="#">最近1月</a></li>
+                                <li><a href="#">最近3月</a></li>
+                            </ul>
+                            <div class="input-right">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="">
+                                        <div class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="threeline"> ---</div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="">
+                                        <div class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn">搜索</button>
+                            </div>
+                        </div>
+                        <div class="panel-body colorgray tablebody">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>交易时间</th>
+                                    <th>类型明细</th>
+                                    <th>收入</th>
+                                    <th>支出</th>
+                                    <th>结余</th>
+                                    <th>备注</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>2017-10-11 11:47:39</td>
+                                    <td>收入</td>
+                                    <td> +1000.00</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>多享借点复借</td>
+                                </tr>
+                                <tr>
+                                    <td>2017-10-11 10:10:13</td>
+                                    <td>支出</td>
+                                    <td></td>
+                                    <td>-1000.00</td>
+                                    <td>-1000.00</td>
+                                    <td>多享借点提现1000.00</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 资金明细结束 -->
+            <!-- 充值 -->
+            <div id="prepaid" class="tab">
+                <div class="prepaid">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <img src="images/prepaid_1.png" width="179" height="49"/>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="leftdiv">
+                                <p>账户金额：</p>
+                                <p>充值金额：</p>
+                                <p>充值手续费：</p>
+                                <p>到账金额：</p>
+                            </div>
+                            <div class="rightdiv">
+                                <p>3993.00 <span>元</span></p>
+                                <input placeholder="请输入充值金额">
+                                <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip"
+                                      data-placement="right"
+                                      title="充值金额不低于100元，不能高于50万元
+                                     充值费用按充值金额的0.0%由第三方平台收取，上限0元，超出部分由平台支付">
+                                </span>
+                                <p>0.00 元 <span class="glyphicon glyphicon-question-sign"></span></p>
+                                <p class="colororange">0.00 <span class="colorblack">元</span></p>
+                            </div>
+                            <div class="buttondiv">
+                                <button class="btn">确认充值</button>
+                            </div>
+                        </div>
+
+                        <div class="panel-footer">
+                            <p>温馨提示</p>
+                            <p>1.为了您的账户安全，请在充值前进行身份认证、手机绑定以及交易密码设置</p>
+                            <p>2.您的账户资金由第三方平台存管</p>
+                            <p>3.请注意您的银行卡充值限制，以免造成不便</p>
+                            <p>4.平台禁止洗钱、信用卡套现、虚假交易等行为，一经发现并确认，将终止该账户的使用</p>
+                            <p>5.如充值金额没有及时到账，请联系在线客服或拨打客服热线</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 充值结束 -->
+            <!-- 提现 -->
+            <div id="withdraw" class="tab">
+                <div class="withdraw">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="bankcard"></div>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="leftdiv">
+                                <p>可用金额：</p>
+                                <p>提现金额：</p>
+                                <p>手续费：</p>
+                                <p>实际到账：</p>
+                            </div>
+                            <div class="rightdiv">
+                                <p>3993.00 <span>元</span></p>
+                                <input placeholder="请输入提现金额">
+                                <p>0.00 元 <span class="colorgray font-size-sm"> （若产生提现手续费，将从您的账户金额中扣除） </span>
+                                    <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip"
+                                          data-placement="right"
+                                          title="第三方收取提现手续费 1000元以下 3元每笔 1000元（含）以上 0元每笔">
+                                </span>
+                                </p>
+                                <p class="colororange">0.00 <span class="colorblack">元</span></p>
+                            </div>
+                            <div class="buttondiv">
+                                <button class="btn">确认提现</button>
+                            </div>
+                        </div>
+
+                        <div class="panel-footer">
+                            <p>温馨提示</p>
+                            <p>遇到以下骗术别上当</p>
+                            <p>自称是多享金汇客服的，且</p>
+                            <p>1、能说出你的借款金额、还款日期的；</p>
+                            <p>2、教你主动提现后，协助你从另一个途径还款的；</p>
+                            <p>3、或让你将资金转账到指定的银行卡账户代你还款的；</p>
+                            <p>4、或加微信/支付宝让你转钱给Ta帮你还款的。</p>
+                            <p>都是骗人的，贷款需要你自己还！！！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 提现结束 -->
+            <!-- 站内消息 -->
+            <div id="message" class="tab">
+                <div class="message">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <p>接收时间： </p>
+                            <div class="timeinput">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="11">
+                                        <div class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="threeline"> ---</div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="22">
+                                        <div class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="input-right">
+                                <p>读取状态： </p>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        全部 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                            class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <button class="btn">搜索</button>
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+                            <button class="btn"><span class="glyphicon glyphicon-trash colorgray"></span> 删除</button>
+                            <button class="btn"><span class="glyphicon glyphicon-envelope colorgray"></span> 标记为已读
+                            </button>
+                            <button class="btn"><span class="glyphicon glyphicon-envelope colorgray"></span> 全部标记为已读
+                            </button>
+                            <table class="table table-striped colorgray">
+                                <thead>
+                                <tr>
+                                    <th><input type="checkbox" title=""/></th>
+                                    <th>时间</th>
+                                    <th>来至</th>
+                                    <th>摘要</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><input type="checkbox" title=""/></td>
+                                    <td>2017-11-10 11:22:33</td>
+                                    <td>Doe</td>
+                                    <td>john@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" title=""/></td>
+                                    <td>Mary</td>
+                                    <td>Moe</td>
+                                    <td>mary@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" title=""/></td>
+                                    <td>July</td>
+                                    <td>Dooley</td>
+                                    <td>july@example.com</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 站内消息结束 -->
+            <!-- 安全设置 -->
+            <div id="security" class="tab">
+                <div class="security">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="box">
+                                <div class="div">您的账户安全级别： <span class="colororange">低</span>
+                                    <div class="bar">
+                                        <div class="bar1"></div>
+                                        <div class="bar2"></div>
+                                    </div>
+                                    建议您启动全部安全设置，以保护账户资金安全。
+                                </div>
+                                <p>上次登录时间： 2017-10-12 14:50:52</p>
+                            </div>
+                            <div class="section">
+                                <span>已认证</span>
+                                <span><span
+                                        class="glyphicon glyphicon-ok-sign colorgreen"> </span> <span> 实名认证</span></span>
+                                <span class="colorgray">张上岗古代诗歌大哥大哥的个电饭锅</span>
+                                <span><a class="colorgreen" href="">查看</a></span>
+                            </div>
+                            <div class="section">
+                                <span>已设置</span>
+                                <span><span
+                                        class="glyphicon glyphicon-ok-sign colorgreen"> </span> <span> 登录密码</span></span>
+                                <span class="colorgray">张上岗古代诗歌大哥大哥的个电饭锅</span>
+                                <span><a class="colorgreen" href="" data-toggle="modal"
+                                         data-target="#xiugai">修改</a></span>
+                            </div>
+                            <div class="section">
+                                <span>已设置</span>
+                                <span><span
+                                        class="glyphicon glyphicon-ok-sign colorgreen"> </span> <span> 交易密码</span></span>
+                                <span class="colorgray">张上岗古代诗歌大哥大哥的个电饭锅</span>
+                                <span><a class="colororange" href="" data-toggle="modal" data-target="#zhaohui">找回</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a class="colorgreen" href="" data-toggle="modal"
+                                       data-target="#xiugai">修改</a></span>
+                            </div>
+                            <div class="section">
+                                <span class="colororange">未认证</span>
+                                <span><span
+                                        class="glyphicon glyphicon-remove-sign colororange"> </span> <span> 手机认证</span></span>
+                                <span class="colorgray">张上岗古代诗歌大哥大哥的个电饭锅</span>
+                                <span><a class="colorgreen" href="">去设置</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 安全设置结束 -->
+            <!-- 银行存管-->
+            <div id="bankmanage" class="tab">
+                <div class="bankmanage">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h4>您的存管银行：<img src="./images/xinwangyinhang.png" width="186" height="27"/></h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="section">
+                                <span><span
+                                        class="glyphicon glyphicon-ok-sign colorgreen"> </span> <span> 交易密码</span></span>
+                                <span class="colorgray">张上岗古代诗歌大哥大哥的个电饭锅dsfsafsffsafsafsafsffffsfsafsafsaffsfsf</span>
+                                <span><a class="colororange" href="" data-toggle="modal" data-target="#zhaohui">找回</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a class="colorgreen" href="" data-toggle="modal"
+                                       data-target="#xiugai">修改</a></span>
+                            </div>
+                            <div class="section">
+                                <span><span
+                                        class="glyphicon glyphicon-ok-sign colorgreen"> </span> <span> 银行卡号</span></span>
+                                <span class="colorgray">张上岗古代诗歌大哥大哥的个电饭锅</span>
+                                <span><a class="colorgreen" href="">解绑银行卡</a></span>
+                            </div>
+                            <div class="section">
+                                <span><span
+                                        class="glyphicon glyphicon-ok-sign colorgreen"> </span> <span> 银行预留手机号码</span></span>
+                                <span class="colorgray">187****5399</span>
+                                <span><a class="colorgreen" href="" data-toggle="modal"
+                                         data-target="#xiugai">修改</a></span>
+                            </div>
+                            <div class="section">
+                                <span><span
+                                        class="glyphicon glyphicon-remove-sign colororange"> </span> <span> 用户授权</span></span>
+                                <span class="colorgray">张上岗古代诗歌大哥大哥的个电饭锅</span>
+                                <span><a class="colorgreen" href="">增加授权</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 银行存管结束 -->
+            <!-- 优惠券 -->
+            <div id="coupon" class="tab">
+                <div class="coupon">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h4>优惠券</h4>
+                        </div>
+                        <div class="panel-body">
+                            <nav class="navbar">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">可用优惠券 5
+                                            <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">可用优惠券1</a></li>
+                                            <li><a href="#">可用优惠券2</a></li>
+                                            <li><a href="#">可用优惠券3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">全部类型
+                                            <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">类型1</a></li>
+                                            <li><a href="#">类型2</a></li>
+                                            <li><a href="#">类型3</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#">新到账</a></li>
+                                    <li><a href="#">即将到账</a></li>
+                                    <li><a href="#">最优惠</a></li>
+                                </ul>
+                            </nav>
+                            <div class="cardbox">
+                                <div class="cardbox-common cardbox1">
+                                    <p><span>1月 </span> 免息</p>
+                                    <p>限条件：6期分期启用</p>
+                                    <p>限产品：多享借点</p>
+                                    <p>券编号：1234567890</p>
+                                    <button class="btn">立即使用</button>
+                                    <p class="colorgray">有效时间：2017.1.30 - 2017.10.30</p>
+                                </div>
+                                <div class="cardbox-common cardbox2">
+                                    <p>￥<span>80 </span> 现金</p>
+                                    <p>限条件：20000 借款启用</p>
+                                    <p>限产品：多享分期</p>
+                                    <p>券编号：1234567890</p>
+                                    <button class="btn">立即使用</button>
+                                    <p class="colorgray">有效时间：2017.1.30 - 2017.10.30</p>
+                                </div>
+                                <div class="cardbox-common cardbox3">
+                                    <p>￥<span>80 </span> 现金</p>
+                                    <p>限条件：20000 借款启用</p>
+                                    <p>限产品：多享分期</p>
+                                    <p>券编号：1234567890</p>
+                                    <button class="btn" disabled>暂未激活</button>
+                                    <p class="colorgray">有效时间：2017.1.30 - 2017.10.30</p>
+                                </div>
+                                <div class="cardbox-common cardbox4">
+                                    <p>￥<span>80 </span> 现金</p>
+                                    <p>限条件：20000 借款启用</p>
+                                    <p>限产品：多享分期</p>
+                                    <p>券编号：1234567890</p>
+                                    <button class="btn" disabled>立即使用</button>
+                                    <p class="colorgray">有效时间：2017.1.30 - 2017.10.30</p>
+                                </div>
+                                <div class="cardbox-common cardbox5">
+                                    <p>￥<span>80 </span> 现金</p>
+                                    <p>限条件：20000 借款启用</p>
+                                    <p>限产品：多享分期</p>
+                                    <p>券编号：1234567890</p>
+                                    <button class="btn" disabled>立即使用</button>
+                                    <p class="colorgray">有效时间：2017.1.30 - 2017.10.30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 优惠券结束 -->
+
+
+        </div>
+
+
+    </div>
+</div>
+
+<!-- footer -->
+<div id="footer">
+    <p>多享金汇&nbsp;&nbsp;&copy;2017&nbsp;www.duoxiang.com&nbsp;&nbsp;All Right Reserved&nbsp;&nbsp;
+        版权所有&nbsp;&nbsp;增值电信业务许可证：桂B2-20150028&nbsp;&nbsp;备案号：桂ICP备14004236号
+    </p>
+</div>
+
+<!-- Modal（找回）-->
+<div id="zhaohui" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">使用手机号找回</h5>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2 col-sm-offset-1" for="npw">输入新密码:</label>
+                        <div class="col-sm-5">
+                            <input type="email" class="form-control" id="npw" placeholder="请输入新密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2 col-sm-offset-1" for=" cfmnpw">确认新密码:</label>
+                        <div class="col-sm-5">
+                            <input type="password" class="form-control" id=" cfmnpw" placeholder="再次确认新密码">
+                        </div>
+                        <a href="" class="vercode-link">获取验证码</a>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <button type="submit" class="btn">下一步</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal（修改）-->
+<div id="xiugai" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">使用原手机号修改</h5>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2 col-sm-offset-1">原手机号码:</label>
+                        <div class="col-sm-5">
+                            <span>156****2219</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2 col-sm-offset-1" for=" verCode">短信验证码:</label>
+                        <div class="col-sm-5">
+                            <input type="password" class="form-control" id=" verCode" placeholder="请输入短信验证码">
+                        </div>
+                        <a href="" class="vercode-link">获取验证码</a>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <button type="submit" class="btn">下一步</button>
+                            <button type="submit" class="btn btn-cancel">取消</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    /* 完成不同标签页的切换 */
+    $(".list-group-item a").click(function () {
+        event.preventDefault();
+        $(".list-group-item").removeClass("active");
+        $("h4.active").removeClass("active");
+        $(this).parent().addClass("active");
+        var b = $(this).attr("href");
+        $(".tab").hide();
+        $(b).show();
+    });
+
+    $("a[href='#accountOverview']").click(function () {
+        event.preventDefault();
+        $(".list-group-item").removeClass("active");
+        $(".tab").hide();
+        $(this).parent().addClass("active");
+        $("#accountOverview").show();
+    })
+
+</script>
+</body>
+</html>
